@@ -18,7 +18,7 @@ class UserNameForm extends React.Component {
     handleSubmit(event) {
         (async () => {
             const response = await octokit.request('GET /users/{username}/gists', {
-                username: 'bradtraversy'
+                username: this.state.value
             });
             if (response.status === 200 ) {
                 this.props.setGistsOnParent(response.data, response.data[0].owner);
