@@ -1,6 +1,5 @@
 import React from 'react';
 import {octokit} from '../helpers/octokit';
-//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
 
 class UserNameForm extends React.Component {
     constructor(props) {
